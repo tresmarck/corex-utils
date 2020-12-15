@@ -27,6 +27,5 @@ set(CMAKE_CXX_EXTENSIONS        OFF)
 # Mhmm. We're sticking with just Clang. Note that -stdlib is a Clang-only flag.
 set(CMAKE_CXX_FLAGS "${CMAKE_C_FLAGS} -stdlib=libc++")
 
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/src/)
-
 add_subdirectory(src/)
+target_include_directories(corex-utils PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src/)
