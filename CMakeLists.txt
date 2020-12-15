@@ -1,5 +1,9 @@
 cmake_minimum_required(VERSION 3.14)
 
+set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake/")
+
+include("BuildType")
+
 if(NOT DEFINED CMAKE_C_COMPILER)
     # We're compiling this project on its own.
     set(CMAKE_C_COMPILER   "clang-11")
