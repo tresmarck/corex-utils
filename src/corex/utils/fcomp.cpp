@@ -80,4 +80,13 @@ namespace cx
   {
     return !floatRelEquals(x, y, tolerance) && x < y;
   }
+
+  bool isFloatInclusiveBetween(float a, float val, float b)
+  {
+    if (floatGreater(a, b)) {
+      std::swap(a, b);
+    }
+
+    return floatLessEqual(a, val) && floatLessEqual(val, b);
+  }
 }
