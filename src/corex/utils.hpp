@@ -2,6 +2,7 @@
 #define COREX_UTILS_HPP
 
 #include <corex/utils/fcomp.hpp>
+#include <corex/utils/random.hpp>
 #include <corex/utils/ReturnState.hpp>
 #include <corex/utils/ReturnValue.hpp>
 
